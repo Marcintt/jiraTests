@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 public class AddUsersTest {
 
 
-    @Test
-    public void AddUsersTest() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get(Config.ADDRESS);
+        @Test
+        public void AddUsersTest() {
+            WebDriverManager.chromedriver().setup();
+            WebDriver driver = new ChromeDriver();
+            driver.get(Config.ADDRESS);
 
-        LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+            LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
 
         WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
         adminMenuButton.click();

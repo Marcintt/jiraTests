@@ -33,5 +33,10 @@ public class AddHRGroup {
         addGroupButton.click();
         WebElement editMembersButton = driver.findElement(By.xpath("//a[contains(@id, 'edit_members_of_HR group')]"));
         editMembersButton.click();
+        WebElement addAdminToGroup = driver.findElement(By.name("usersToAssignStr"));
+        addAdminToGroup.click();
+        addAdminToGroup.sendKeys("admin");
+        WebElement addSelectedUsersButton = driver.findElement(By.xpath("//input[contains(@id, 'add-users-to-selected-groups')]"));
+        addSelectedUsersButton.click();
     }
 }

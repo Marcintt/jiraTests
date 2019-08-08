@@ -14,6 +14,7 @@ public class CreateTest {
         WebDriverManager.chromedriver().setup();
         WebDriver driver= new ChromeDriver();
         JavascriptExecutor js = (JavascriptExecutor)driver;
+
         driver.get("http://192.168.192.253:8080");
         WebElement loginTopButton = driver.findElement(By.xpath("//a[contains(@class,'login-link')]"));
         loginTopButton.click();
@@ -43,8 +44,7 @@ public class CreateTest {
         WebElement userPicker = driver.findElement(By.xpath("//a[contains(@href, 'VM$.openUserPickerWindow('userNames');)]"));
         userPicker.click();
 
-        //driver.get("http://192.168.87.129:8080/secure/popups/UserPickerBrowser.jspa?formName=jiraform&multiSelect=true&element=userNames");
-        //driver.
+
 
 
     }
