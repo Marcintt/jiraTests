@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class InitialSetupTest {
 
     @Test
-    public void AddUsersTest() {
+    public void InitialSetup() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get(Config.ADDRESS);
