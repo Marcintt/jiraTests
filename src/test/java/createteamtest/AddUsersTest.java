@@ -54,7 +54,7 @@ public class AddUsersTest {
 
             emailField.sendKeys("mailuser" + i + "@mail.com");
             fullNameField.sendKeys("User " + usersTab[i - 1]);
-            createUserNameField.sendKeys("userx" + i);
+            createUserNameField.sendKeys("user " + i);
             createPasswordField.sendKeys("admin");
 
             if (i == userCount) {

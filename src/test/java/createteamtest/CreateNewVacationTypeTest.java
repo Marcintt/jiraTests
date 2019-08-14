@@ -36,6 +36,8 @@ public class CreateNewVacationTypeTest {
         addVacationTypeTypeRadioButton.click();
         WebElement addVacationTypeStartDateField = driver.findElement(By.xpath("//input[contains(@id, 'periodStartDate')]"));
         addVacationTypeStartDateField.sendKeys("2019-01-01");
+        WebElement closeCalendar = driver.findElement(By.xpath("//textarea[contains(@id, 'description')]"));//to change
+        closeCalendar.click();
         WebElement addVacationTypeDefaultDayLimit = driver.findElement(By.xpath("//input[contains(@name, 'defaultDayLimit')]"));
         addVacationTypeDefaultDayLimit.sendKeys("26");
         WebElement addButton = driver.findElement(By.xpath("//button[contains(@name, 'action')]"));
@@ -71,6 +73,8 @@ public class CreateNewVacationTypeTest {
         addVacationTypeTypeRadioButton.click();
         WebElement addVacationTypeStartDateField = driver.findElement(By.xpath("//input[contains(@id, 'periodStartDate')]"));
         addVacationTypeStartDateField.sendKeys("2019-01-01");
+        WebElement closeCalendar = driver.findElement(By.xpath("//textarea[contains(@id, 'description')]"));//to change
+        closeCalendar.click();
         WebElement addVacationTypeDefaultDayLimit = driver.findElement(By.xpath("//input[contains(@name, 'defaultDayLimit')]"));
         addVacationTypeDefaultDayLimit.sendKeys("26");
         WebElement addVacationTypeTypeVacationRequestPeriod = driver.findElement(By.xpath("//select[contains(@name, 'vacationDocumentPeriodType')]"));
@@ -109,6 +113,8 @@ public class CreateNewVacationTypeTest {
         addVacationTypeTypeRadioButton.click();
         WebElement addVacationTypeStartDateField = driver.findElement(By.xpath("//input[contains(@id, 'periodStartDate')]"));
         addVacationTypeStartDateField.sendKeys("2019-01-01");
+        WebElement closeCalendar = driver.findElement(By.xpath("//textarea[contains(@id, 'description')]"));//to change
+        closeCalendar.click();
         WebElement addVacationTypeDefaultDayLimit = driver.findElement(By.xpath("//input[contains(@name, 'defaultDayLimit')]"));
         addVacationTypeDefaultDayLimit.sendKeys("26");
         WebElement addVacationTypeTypeVacationRequestPeriod = driver.findElement(By.xpath("//select[contains(@name, 'vacationDocumentPeriodType')]"));
@@ -143,10 +149,6 @@ public class CreateNewVacationTypeTest {
         addVacationTypeNameField.sendKeys("One time year daily");
         WebElement addVacationTypeDescriptionField = driver.findElement(By.xpath("//textarea[contains(@id, 'description')]"));
         addVacationTypeDescriptionField.sendKeys("One time year daily");
-//        WebElement addVacationTypeTypeRadioButton = driver.findElement(By.xpath("(//input[@name='kindType'])[1]"));
-//        addVacationTypeTypeRadioButton.click();
-//        WebElement addVacationTypeStartDateField = driver.findElement(By.xpath("//input[contains(@id, 'periodStartDate')]"));
-//        addVacationTypeStartDateField.sendKeys("2019-01-01");
         WebElement addVacationTypeDefaultDayLimit = driver.findElement(By.xpath("//input[contains(@name, 'defaultDayLimit')]"));
         addVacationTypeDefaultDayLimit.sendKeys("26");
         WebElement addButton = driver.findElement(By.xpath("//button[contains(@name, 'action')]"));
@@ -178,10 +180,6 @@ public class CreateNewVacationTypeTest {
         addVacationTypeNameField.sendKeys("One time year halfday");
         WebElement addVacationTypeDescriptionField = driver.findElement(By.xpath("//textarea[contains(@id, 'description')]"));
         addVacationTypeDescriptionField.sendKeys("One time year halfday");
-//        WebElement addVacationTypeTypeRadioButton = driver.findElement(By.xpath("(//input[@name='kindType'])[1]"));
-//        addVacationTypeTypeRadioButton.click();
-//        WebElement addVacationTypeStartDateField = driver.findElement(By.xpath("//input[contains(@id, 'periodStartDate')]"));
-//        addVacationTypeStartDateField.sendKeys("2019-01-01");
         WebElement addVacationTypeDefaultDayLimit = driver.findElement(By.xpath("//input[contains(@name, 'defaultDayLimit')]"));
         addVacationTypeDefaultDayLimit.sendKeys("26");
         WebElement addVacationTypeTypeVacationRequestPeriod = driver.findElement(By.xpath("//select[contains(@name, 'vacationDocumentPeriodType')]"));
@@ -216,10 +214,6 @@ public class CreateNewVacationTypeTest {
         addVacationTypeNameField.sendKeys("One time year hourly");
         WebElement addVacationTypeDescriptionField = driver.findElement(By.xpath("//textarea[contains(@id, 'description')]"));
         addVacationTypeDescriptionField.sendKeys("One time year hourly");
-        //WebElement addVacationTypeTypeRadioButton = driver.findElement(By.xpath("(//input[@name='kindType'])"));
-        //addVacationTypeTypeRadioButton.click();
-        //WebElement addVacationTypeStartDateField = driver.findElement(By.xpath("//input[contains(@id, 'periodStartDate')]"));
-        //addVacationTypeStartDateField.sendKeys("2019-01-01");
         WebElement addVacationTypeDefaultDayLimit = driver.findElement(By.xpath("//input[contains(@name, 'defaultDayLimit')]"));
         addVacationTypeDefaultDayLimit.sendKeys("26");
         WebElement addVacationTypeTypeVacationRequestPeriod = driver.findElement(By.xpath("//select[contains(@name, 'vacationDocumentPeriodType')]"));
