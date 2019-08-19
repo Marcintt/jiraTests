@@ -36,7 +36,6 @@ bin/
 *.jar
 *.war
 *.ear
-*.java
 *.rar
 *.tar
 #*.zip
@@ -60,4 +59,3 @@ Thumbs.db
 
 node_modules
 .node
-src/main/
