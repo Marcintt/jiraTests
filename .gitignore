@@ -60,3 +60,4 @@ Thumbs.db
 
 node_modules
 .node
+src/main/
