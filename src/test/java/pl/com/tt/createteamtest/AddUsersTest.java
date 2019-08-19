@@ -1,4 +1,4 @@
-package createteamtest;
+package pl.com.tt.createteamtest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -9,6 +9,13 @@ import org.testng.annotations.Test;
 
 public class AddUsersTest {
 
+    int userCount = 4;
+    String usersTab[] = {
+            "Adrian",
+            "Mia",
+            "Przemion",
+            "Tomas"
+    };
 
         @Test
         public void AddUsersTest() {
@@ -32,13 +39,7 @@ public class AddUsersTest {
         createAnotherButton.click();
 
 
-        int userCount = 4;
-        String usersTab[] = {
-                "Adrian",
-                "Mia",
-                "Przemion",
-                "Tomas"
-        };
+
 
         for (int i = 1; i <= userCount; i++) {
             WebElement emailField = driver.findElement(By.xpath("//input[contains(@id, 'user-create-email')]"));

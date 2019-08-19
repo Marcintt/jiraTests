@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/wikarskim/IdeaProjects/jiraTests">
         <classes>
-            <class name="createteamtest.CreateTest">
+            <class name="pl.com.tt.createteamtest.CreateTest">
                 <methods>
                     <include name="testCreateTeam"/>
                 </methods>

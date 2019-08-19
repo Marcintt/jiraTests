@@ -1,4 +1,4 @@
-package createteamtest;
+package pl.com.tt.createteamtest;
 
 public abstract class Config {
     public static final String ADDRESS = "http://192.168.192.131:8080";

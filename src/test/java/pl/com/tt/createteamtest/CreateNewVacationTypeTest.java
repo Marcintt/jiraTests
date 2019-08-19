@@ -1,4 +1,4 @@
-package createteamtest;
+package pl.com.tt.createteamtest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -15,15 +15,8 @@ public class CreateNewVacationTypeTest {
         driver.get(Config.ADDRESS);
 
         LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+        LoginFunction.administratorAccessFunction(driver, Config.ADMIN_PASSWORD);
 
-        WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
-        adminMenuButton.click();
-        WebElement userManagementButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_plugins_menu')]"));
-        userManagementButton.click();
-        WebElement adminAccessField = driver.findElement(By.xpath("//input[contains(@id, 'login-form-authenticatePassword')]"));
-        adminAccessField.sendKeys("admin");
-        WebElement confirmButton = driver.findElement(By.xpath("//input[contains(@id, 'login-form-submit')]"));
-        confirmButton.click();
         WebElement vacationTypeButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-manage-vacation-types-link')]"));
         vacationTypeButton.click();
         WebElement addNewVacationTypeButton = driver.findElement(By.xpath("//button[contains(.,'Add new Vacation Type')]"));
@@ -52,15 +45,8 @@ public class CreateNewVacationTypeTest {
         driver.get(Config.ADDRESS);
 
         LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+        LoginFunction.administratorAccessFunction(driver, Config.ADMIN_PASSWORD);
 
-        WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
-        adminMenuButton.click();
-        WebElement userManagementButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_plugins_menu')]"));
-        userManagementButton.click();
-        WebElement adminAccessField = driver.findElement(By.xpath("//input[contains(@id, 'login-form-authenticatePassword')]"));
-        adminAccessField.sendKeys("admin");
-        WebElement confirmButton = driver.findElement(By.xpath("//input[contains(@id, 'login-form-submit')]"));
-        confirmButton.click();
         WebElement vacationTypeButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-manage-vacation-types-link')]"));
         vacationTypeButton.click();
         WebElement addNewVacationTypeButton = driver.findElement(By.xpath("//button[contains(.,'Add new Vacation Type')]"));
@@ -92,15 +78,8 @@ public class CreateNewVacationTypeTest {
         driver.get(Config.ADDRESS);
 
         LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+        LoginFunction.administratorAccessFunction(driver, Config.ADMIN_PASSWORD);
 
-        WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
-        adminMenuButton.click();
-        WebElement userManagementButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_plugins_menu')]"));
-        userManagementButton.click();
-        WebElement adminAccessField = driver.findElement(By.xpath("//input[contains(@id, 'login-form-authenticatePassword')]"));
-        adminAccessField.sendKeys("admin");
-        WebElement confirmButton = driver.findElement(By.xpath("//input[contains(@id, 'login-form-submit')]"));
-        confirmButton.click();
         WebElement vacationTypeButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-manage-vacation-types-link')]"));
         vacationTypeButton.click();
         WebElement addNewVacationTypeButton = driver.findElement(By.xpath("//button[contains(.,'Add new Vacation Type')]"));
@@ -132,15 +111,8 @@ public class CreateNewVacationTypeTest {
         driver.get(Config.ADDRESS);
 
         LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+        LoginFunction.administratorAccessFunction(driver, Config.ADMIN_PASSWORD);
 
-        WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
-        adminMenuButton.click();
-        WebElement userManagementButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_plugins_menu')]"));
-        userManagementButton.click();
-        WebElement adminAccessField = driver.findElement(By.xpath("//input[contains(@id, 'login-form-authenticatePassword')]"));
-        adminAccessField.sendKeys("admin");
-        WebElement confirmButton = driver.findElement(By.xpath("//input[contains(@id, 'login-form-submit')]"));
-        confirmButton.click();
         WebElement vacationTypeButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-manage-vacation-types-link')]"));
         vacationTypeButton.click();
         WebElement addNewVacationTypeButton = driver.findElement(By.xpath("//button[contains(.,'Add new Vacation Type')]"));
@@ -164,14 +136,8 @@ public class CreateNewVacationTypeTest {
 
         LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
 
-        WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
-        adminMenuButton.click();
-        WebElement userManagementButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_plugins_menu')]"));
-        userManagementButton.click();
-        WebElement adminAccessField = driver.findElement(By.xpath("//input[contains(@id, 'login-form-authenticatePassword')]"));
-        adminAccessField.sendKeys("admin");
-        WebElement confirmButton = driver.findElement(By.xpath("//input[contains(@id, 'login-form-submit')]"));
-        confirmButton.click();
+        LoginFunction.administratorAccessFunction(driver, Config.ADMIN_PASSWORD);
+
         WebElement vacationTypeButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-manage-vacation-types-link')]"));
         vacationTypeButton.click();
         WebElement addNewVacationTypeButton = driver.findElement(By.xpath("//button[contains(.,'Add new Vacation Type')]"));
@@ -197,15 +163,8 @@ public class CreateNewVacationTypeTest {
         driver.get(Config.ADDRESS);
 
         LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+        LoginFunction.administratorAccessFunction(driver, Config.ADMIN_PASSWORD);
 
-        WebElement adminMenuButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_menu')]"));
-        adminMenuButton.click();
-        WebElement userManagementButton = driver.findElement(By.xpath("//a[contains(@id, 'admin_plugins_menu')]"));
-        userManagementButton.click();
-        WebElement adminAccessField = driver.findElement(By.xpath("//input[contains(@id, 'login-form-authenticatePassword')]"));
-        adminAccessField.sendKeys("admin");
-        WebElement confirmButton = driver.findElement(By.xpath("//input[contains(@id, 'login-form-submit')]"));
-        confirmButton.click();
         WebElement vacationTypeButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-manage-vacation-types-link')]"));
         vacationTypeButton.click();
         WebElement addNewVacationTypeButton = driver.findElement(By.xpath("//button[contains(.,'Add new Vacation Type')]"));
