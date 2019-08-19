@@ -1,4 +1,4 @@
-package pl.com.tt.createteamtest;
+package pl.com.tt.createteamtest.HolidaySchemes;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import pl.com.tt.createteamtest.Config;
+import pl.com.tt.createteamtest.LoginFunction;
 
 public class HolidaySchemeTest {
     @Test
@@ -125,5 +127,36 @@ public class HolidaySchemeTest {
         deleteInDetailHSButton.click();
         WebElement deleteButtonInWarningButton = driver.findElement(By.xpath("(//button[@name='submitButton'])[2]"));
         deleteButtonInWarningButton.click();
+    }
+
+    @Test
+    public void importHolidaysFromFile(){
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get(Config.ADDRESS);
+
+        LoginFunction.login(driver, Config.ADMIN_LOGIN, Config.ADMIN_PASSWORD);
+
+        WebElement topMenuVacationsButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-top-menu')]"));
+        topMenuVacationsButton.click();
+        WebElement managementButton = driver.findElement(By.xpath("//a[contains(@id, 'vm-top-item-6_lnk')]"));
+        managementButton.click();
+        WebElement holidaySchemeButton = driver.findElement(By.linkText("Holiday schemes"));
+        holidaySchemeButton.click();
+        WebElement addHolidaySchemeButton = driver.findElement(By.xpath("//button[contains(@name, 'addNewHolidaySchemeButton')]"));
+        addHolidaySchemeButton.click();
+        WebElement holidaySchemeNameField = driver.findElement(By.xpath("//input[contains(@name, 'newHolidaySchemeName')]"));
+        holidaySchemeNameField.sendKeys("Import file Holiday Scheme ");
+        WebElement createButton = driver.findElement(By.xpath("//button[contains(@name, 'submitButton')]"));
+        createButton.click();
+        WebElement importButton = driver.findElement(By.xpath("//button[contains(@id, 'button-open-import-dialog')]"));
+        importButton.click();
+        WebElement browseButton = driver.findElement(By.xpath("//input[contains(@id, 'importHolidaysDialogFile')]"));
+        browseButton.click();
+        //WebElement browseFile = driver.findElement(By.xpath("//input[contains(@id=//'importHolidaysDialogFile//')]"));
+        //browseFile.sendKeys("C:\\Users\\wikarskim\\Downloads\\US_Holidays.ics");
+        driver.findElement(By.id("importHolidaysDialogFile")).sendKeys("C:\\fakepath\\US_Holidays.ics");
+        //browseFile.sendKeys("C:\\Users\\wikarskim\\Downloads");
+
     }
 }
