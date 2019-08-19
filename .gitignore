@@ -34,9 +34,9 @@ bin/
 *.gz
 *.iso
 *.jar
-*.java
 *.war
 *.ear
+*.java
 *.rar
 *.tar
 #*.zip
@@ -60,4 +60,3 @@ Thumbs.db
 
 node_modules
 .node
-.idea
